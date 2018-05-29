@@ -1,7 +1,8 @@
 'use strict';
 
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const path = require('path');
 const webpack = require('webpack');
@@ -12,7 +13,7 @@ const vendorDependencies = Object.keys(packageJson['dependencies']);
 
 const cleanPlugin = new CleanWebpackPlugin(['public']);
 
-const htmlPlugin = new HtmlWebPackPlugin({
+const htmlPlugin = new HtmlWebpackPlugin({
   template: "./src/index.html",
   filename: "./index.html"
 });
@@ -23,16 +24,20 @@ const definePlugin = new webpack.DefinePlugin({
         }
     });
 
+const miniCssExtractPlugin = new MiniCssExtractPlugin({
+    filename: "style.css",
+    chunkFilename: "[name].[contenthash].css"});
+
 const babelLoader = {
   loader: 'babel-loader',
   options: {
     cacheDirectory: true,
     presets: [
-      "react",
+      'react',
       [
-        "env",
+        'env',
         {
-          "modules": false
+          'modules': false
         }
       ]
     ]
@@ -68,18 +73,34 @@ module.exports = {
             use: [
             babelLoader
             ]
-        }]
+        },
+        {
+            test: /\.css/,
+            use: [
+                MiniCssExtractPlugin.loader,
+                "css-loader"
+                ]        
+        }
+    ]
     },
     optimization: {
         splitChunks: {
             name: true,
             cacheGroups: {
-                commons: { test: /[\\/]node_modules[\\/]/, name: "vendors", chunks: "all" }
+                commons: { test: /[\\/]node_modules[\\/]/, name: "vendors", chunks: "all" },
+                styles: { 
+                    name: 'styles',
+                    test: /\.css$/,
+                    chunks: 'all',
+                    minChunks: 1,
+                    reuseExistingChunk: true,
+                    enforce: true
+                }
             }
         }
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js']
     },
-    plugins: [cleanPlugin, htmlPlugin, definePlugin]
+    plugins: [cleanPlugin, htmlPlugin, miniCssExtractPlugin, definePlugin]
 };

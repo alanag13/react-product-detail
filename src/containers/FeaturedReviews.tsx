@@ -10,12 +10,12 @@ const FeaturedReviews = (props: IFeaturedReviewProps) =>
             <div><strong>view all {props.numReviews} reviews</strong></div>
         </div>
         <div>
-            <div>
+            <div className="center-flex">
                 <FeaturedReviewHeader label="PRO" description="most helpful 4-5 star review"/>
                 <FeaturedReviewHeader label="CON" description="most helpful 1-2 star review"/>
             </div>
             <hr />
-            <div>
+            <div className="center-flex">
                 <Review { ... props.proReview } />
                 <Review { ... props.conReview } />
             </div>

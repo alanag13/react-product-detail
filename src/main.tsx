@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import FeaturedReviews from "./containers/FeaturedReviews";
 import ProductHightlights from "./components/ProductHighlights";
-import ImageCarousel from "./components/ImageCarousel";
+import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
 import OfferPrice from "./components/OfferPrice";
 import PromotionList from "./components/PromotionList";
 import QuantityInput from "./components/QuantityInput";
@@ -13,6 +13,8 @@ import IFeaturedReviewProps from "./types/IFeaturedReviewProps";
 import PrimaryActionButtons from "./containers/PrimaryActionButtons";
 import SecondaryActionButtons from "./containers/SecondaryActionButtons";
 import ReturnsPolicy from "./components/ReturnsPolicy";
+
+require('./styles.css');
 
 const Index = () => {
   //not sure why everything is a single-item array buy this gets what we need
