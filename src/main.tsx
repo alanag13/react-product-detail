@@ -5,7 +5,7 @@ import ProductHightlights from "./components/ProductHighlights";
 import ImageCarousel from "./containers/ImageCarousel/ImageCarousel";
 import OfferPrice from "./components/OfferPrice";
 import PromotionList from "./components/PromotionList";
-import QuantityInput from "./components/QuantityInput";
+import QuantityInput from "./containers/QuantityInput/QuantityInput";
 import ProductHeading from "./components/ProductHeading";
 import PrimaryImage from "./components/PrimaryImage";
 import { getData } from './data/item-data';

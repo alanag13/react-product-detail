@@ -1,0 +1,30 @@
+.qty-ctrl {
+    max-width: 47%;
+    min-width: 225px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px 0;
+}
+
+.qty-ctrl, .qty-btn-container {
+    display: flex;
+    align-items: center;
+}
+
+.qty-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background: #CCCCCC;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.qty-label {
+    margin: 0 10px;
+}
