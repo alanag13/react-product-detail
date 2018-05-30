@@ -1,3 +1,10 @@
-.carouselImg {
+.carousel-ctrl {
+    width: 180px;
     height: 60px;
+    overflow: hidden;
+}
+
+.carousel-img {
+    height: 60px;
+    cursor: pointer;
 }
