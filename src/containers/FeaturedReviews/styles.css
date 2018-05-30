@@ -1,0 +1,15 @@
+.featured-review {
+    flex: 1 0 auto;
+    min-width: 200px;
+    flex-basis: 45%;
+}
+
+.featured-reviews-container {
+    background: #F6F5F5;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.reviews-stats {
+    margin: 15px 0;
+}

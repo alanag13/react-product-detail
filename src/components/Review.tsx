@@ -2,7 +2,7 @@ import React from "react";
 import { IFeaturedReview } from "../types/IProductDetail";
 
 const Review = (props: IFeaturedReview) =>
-    <div className="grow">
+    <div className="review">
         <h3>{props.title}</h3>
         <div>
             <p>{props.review}</p>

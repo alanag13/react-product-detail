@@ -2,9 +2,9 @@ import React from "react";
 import IFeaturedReviewHeaderProps from "../types/IFeaturedReviewHeaderProps";
 
 const FeaturedReviewHeader = (props: IFeaturedReviewHeaderProps) =>
-    <div className="grow">
+    <div>
         <h2>{props.label}</h2>
-        <span>{props.description}</span>
+        <span className="muted-text">{props.description}</span>
     </div>;
 
 export default FeaturedReviewHeader;

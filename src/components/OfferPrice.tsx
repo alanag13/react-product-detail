@@ -3,7 +3,7 @@ import { IOfferPrice } from "../types/IProductDetail";
 
 const OfferPrice = (props: IOfferPrice) =>
     <div>
-        <strong><span>{props.formattedPriceValue}</span></strong>&nbsp;
+        <span className="big"><strong>{props.formattedPriceValue}</strong></span>&nbsp;
         <span>{props.priceQualifier.toLowerCase()}</span>
     </div>;
 
