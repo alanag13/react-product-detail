@@ -10,7 +10,7 @@ import IFeaturedReviewProps from "./types/IFeaturedReviewProps";
 import PrimaryActionButtons from "./containers/PrimaryActionButtons";
 import SecondaryActionButtons from "./containers/SecondaryActionButtons";
 import ReturnsPolicy from "./components/ReturnsPolicy";
-import MainProductInfo from "./containers/MainProductInfo";
+import MainProductInfo from "./containers/MainProductInfo/MainProductInfo";
 import IMainProductInfoProps from "./types/IMainProductInfoProps";
 
 require('./styles.css');
@@ -33,18 +33,22 @@ const Index = () => {
   const mainProductInfo: IMainProductInfoProps = {title, mainImage, alternateImages };
   const featuredReviews: IFeaturedReviewProps = { conReview, proReview, overallRating, numReviews };
   return (
-        <div>
+        <div className="flex-root">
           <MainProductInfo { ...mainProductInfo } />
-          <OfferPrice { ...offerPrice } />
-          <hr/>
-          <PromotionList promotions={ promotions } />
-          <hr/>
-          <QuantityInput />
-          <PrimaryActionButtons />
-          <ReturnsPolicy />
-          <SecondaryActionButtons />
-          <ProductHightlights { ...data.ItemDescription[0] }/>
-          <FeaturedReviews { ...featuredReviews }/> 
+          <div>
+            <OfferPrice { ...offerPrice } />
+            <hr/>
+            <PromotionList promotions={ promotions } />
+            <hr/>
+            <QuantityInput />
+            <PrimaryActionButtons />
+          </div>
+          <div>
+            <ReturnsPolicy />
+            <SecondaryActionButtons />
+            <ProductHightlights { ...data.ItemDescription[0] }/>
+          </div>
+            <FeaturedReviews { ...featuredReviews }/> 
         </div>
   );
 };

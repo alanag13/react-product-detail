@@ -1,6 +1,6 @@
 .qty-ctrl {
-    max-width: 47%;
-    min-width: 225px;
+    min-width: 175px;
+    max-width: calc(50% - 12px);
     border: 1px solid #cccccc;
     border-radius: 5px;
     padding: 5px;

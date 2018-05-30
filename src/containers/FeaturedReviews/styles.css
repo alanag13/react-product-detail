@@ -1,7 +1,9 @@
-.featured-review {
-    flex: 1 0 auto;
-    min-width: 200px;
-    flex-basis: 45%;
+.reviews-wrapper {
+    max-width: 700px;
+}
+
+.reviews-stats {
+    margin: 15px 0;
 }
 
 .featured-reviews-container {
@@ -10,8 +12,10 @@
     border-radius: 5px;
 }
 
-.reviews-stats {
-    margin: 15px 0;
+.featured-review {
+    flex: 1 0 auto;
+    min-width: 200px;
+    flex-basis: 45%;
 }
 
 .review {

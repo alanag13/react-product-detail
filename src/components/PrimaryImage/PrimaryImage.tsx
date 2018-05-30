@@ -1,5 +1,7 @@
 import React from "react";
-import { IImageElement} from "../types/IProductDetail";
+import { IImageElement} from "../../types/IProductDetail";
+
+require("./styles.css");
 
 export default class PrimaryImage extends React.PureComponent<IImageElement, IImageElement> {
 
@@ -10,7 +12,7 @@ export default class PrimaryImage extends React.PureComponent<IImageElement, IIm
 
     render () {
         return (
-            <div>
+            <div className="primary-image">
                 <img src={this.props.image}/>
             </div>
         );

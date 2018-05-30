@@ -6,7 +6,7 @@ import FeaturedReviewHeader from "../../components/FeaturedReviewHeader";
 require('./styles.css');
 
 const FeaturedReviews = (props: IFeaturedReviewProps) =>
-    <div>
+    <div className="reviews-wrapper">
         <div className="reviews-stats space-between-flex">
             <div><strong>overall</strong></div>
             <div><strong>view all {props.numReviews} reviews</strong></div>
