@@ -5,7 +5,7 @@ const ProductHighlights = (props: IPromotionListProps) =>
     <div>
             {props.promotions.map((promo, i) => (
             //I'm doing this as a workaround for the sake of the demo, but there's a potential XSS vulnerability here
-            <div key={i}><strong>{ promo.Description[0].shortDescription }</strong></div>
+            <div key={i}>{ promo.Description[0].shortDescription }</div>
             ))}
     </div>;
 

@@ -3,7 +3,7 @@ import IFeaturedReviewHeaderProps from "../types/IFeaturedReviewHeaderProps";
 
 const FeaturedReviewHeader = (props: IFeaturedReviewHeaderProps) =>
     <div>
-        <h2>{props.label}</h2>
+        <h3 className="thin-text"><strong>{props.label}</strong></h3>
         <span className="muted-text">{props.description}</span>
     </div>;
 

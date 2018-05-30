@@ -3,7 +3,7 @@ import IProductHeadingProps from "../types/IProductHeadingProps"
 
 const ProductTitle = (props: IProductHeadingProps) => (
     <div>
-        <h2>{props.title}</h2>
+        <h2 className="thin-text">{props.title}</h2>
     </div>
 );
 

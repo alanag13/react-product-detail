@@ -1,37 +1,32 @@
-.btn-group-container {
-    max-width: 500px;
-}
-
 .btn {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    width: 100%;
+    margin: 15px 0;
 }
 
 .btn-primary {
     color: #FFFFFF;
     font-size: 18px;
-    width: 235px;
-    padding: 10px 0;
+    max-width: 49%;
+    padding: 8px 0;
 }
 
 .btn-secondary {
-    flex: 1 0 30%;
-    min-width: 100px;
-    max-width: 100%;
-    width: 100%; /* fixes IE11 bug with space-between */
+    max-width: 32%;
     padding: 8px 0;
     background: #F3F3F3;
 }
 
 .btn-red {
     background: #cd0303;
-    background: linear-gradient(0, #cd0303 90%, #e16868 100%);
-    border: 2px solid #cd0303;
+    background: linear-gradient(0, #cd0303 85%, #e16868 100%);
+    border: 1px solid #cd0303;
 }
 
 .btn-black {
     background: #000000;
-    background: linear-gradient(0, #000000 90%, #696969 100%);
-    border: 2px solid #000000;
+    background: linear-gradient(0, #000000 85%, #696969 100%);
+    border: 1px solid #000000;
 }

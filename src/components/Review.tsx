@@ -3,7 +3,7 @@ import { IFeaturedReview } from "../types/IProductDetail";
 
 const Review = (props: IFeaturedReview) =>
     <div className="review">
-        <h3>{props.title}</h3>
+        <h4>{props.title}</h4>
         <div>
             <p>{props.review}</p>
         </div>
