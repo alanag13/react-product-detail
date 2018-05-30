@@ -85,10 +85,6 @@ li {
     justify-content: space-between;
 }
 
-.grow {
-    flex: 1 0 auto;
-}
-
 .inline {
     display: inline-block;
 }
