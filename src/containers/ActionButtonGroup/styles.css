@@ -1,0 +1,20 @@
+.btn {
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-red {
+    background: #cd0303;
+    background: linear-gradient(0deg, #cd0303 80%, rgba(255,255,255,1) 100%);
+    border: 2px solid #cd0303;
+}
+
+.btn-black {
+    background: #000000;
+    background: linear-gradient(0deg, #000000 80%, rgba(255,255,255,1) 100%);
+    border: 2px solid #000000;
+}
