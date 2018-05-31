@@ -8,3 +8,16 @@
 .carousel-img {
     cursor: pointer;
 }
+
+.carousel-btn {
+    width: 80px;
+    cursor: pointer;
+}
+
+.carousel-next {
+    background: url('./arrow-right.png') center center no-repeat
+}
+
+.carousel-prev {
+    background: url('./arrow-left.png') center center no-repeat
+}
