@@ -13,7 +13,6 @@
         "moduleResolution": "node",
         "noImplicitAny": true,
         "noImplicitReturns": true,
-        "noUnusedParameters": true,
         "removeComments": false,
         "preserveConstEnums": true,
         "sourceMap": true,

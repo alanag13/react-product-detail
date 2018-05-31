@@ -30,17 +30,16 @@ h2 {
     font-size: 26px;
 }
 
-.thin-text {
-    font-family: Arial Narrow, Arial, Helvetica, sans-serif;
-    font-weight: 100;
-}
-
 h3 {
     font-size: 20px;
 }
 
+h4, .medium {
+    font-size: 18px;
+}
+
 h4 {
-    font-size: 16px;
+    margin-top: 0;
 }
 
 .small {
@@ -49,6 +48,15 @@ h4 {
 
 .muted-text {
     color: #666666;
+}
+
+.thin-text {
+    font-family: Arial Narrow, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.red-text {
+    color: #cd0303;
 }
 
 ul, p {

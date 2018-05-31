@@ -3,6 +3,9 @@ import { IFeaturedReview } from "../types/IProductDetail";
 
 const Review = (props: IFeaturedReview) =>
     <div className="review">
+        {[...Array(5)].map((x, i) =>
+                <span className="medium red-text" key={i} dangerouslySetInnerHTML={{__html: (i + 1) <= parseInt(props.overallRating) ? '&#9733;' : '&#9734;' }}></span>
+        )}
         <h4>{props.title}</h4>
         <div>
             <p>{props.review}</p>

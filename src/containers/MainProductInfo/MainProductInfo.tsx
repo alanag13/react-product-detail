@@ -26,7 +26,7 @@ export default class MainProductInfo extends React.PureComponent<IMainProductInf
             <section className="main-product-info">
                 <ProductHeading title={this.props.title}/>
                 <PrimaryImage image={this.state.image}/>
-                <ImageCarousel images={this.props.alternateImages} onImageSelected={this.setImage}/>
+                <ImageCarousel images={this.props.alternateImages} imagePxWidth={60} numImagesShown={3} onImageSelected={this.setImage}/>
             </section>
         );
     }

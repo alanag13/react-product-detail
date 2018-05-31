@@ -2,9 +2,9 @@
     width: 180px;
     height: 60px;
     overflow: hidden;
+    position: relative;
 }
 
 .carousel-img {
-    height: 60px;
     cursor: pointer;
 }
