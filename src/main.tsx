@@ -16,7 +16,7 @@ import IMainProductInfoProps from "./types/IMainProductInfoProps";
 require('./styles.css');
 
 const Index = () => {
-  //not sure why everything is a single-item array buy this gets what we need
+  //not sure why everything is a single-item array but this gets what we need
   const data = getData(),
         title = data.title,
         images = data.Images[0],
@@ -35,20 +35,21 @@ const Index = () => {
   return (
         <div className="flex-root">
           <MainProductInfo { ...mainProductInfo } />
-          <div>
+          <section className="flex-cell purchase-info">
             <OfferPrice { ...offerPrice } />
             <hr/>
             <PromotionList promotions={ promotions } />
             <hr/>
             <QuantityInput />
             <PrimaryActionButtons />
-          </div>
-          <div>
+          </section>
+          <div className="flex-cell column-wrap-break"></div>
+          <section className="flex-cell general-info">
             <ReturnsPolicy />
             <SecondaryActionButtons />
             <ProductHightlights { ...data.ItemDescription[0] }/>
-          </div>
-            <FeaturedReviews { ...featuredReviews }/> 
+          </section>
+          <FeaturedReviews { ...featuredReviews }/> 
         </div>
   );
 };

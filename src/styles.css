@@ -15,6 +15,7 @@ main {
 .flex-root {
     display: flex;
     flex-flow: column wrap;
+    align-content: space-around;
 }
 
 h1, h2, h3 {
@@ -92,4 +93,33 @@ li {
 
 .inline {
     display: inline-block;
+}
+
+/* force the columns to wrap on desktop-sized screens
+ and display items in a different order */
+@media only screen and (min-width: 960px){
+    html, body {
+        max-width: 1050px;
+    }
+
+    .flex-root {
+        height: 100%;
+    }
+
+    .flex-cell {
+        order: 1
+    }
+
+    .column-wrap-break {
+        flex: 0 0 100%;
+        order: 2;
+    }
+
+    .purchase-info, .general-info {
+        order: 3
+    }
+
+    .reviews-wrapper {
+        max-width: 500px;
+    }
 }
