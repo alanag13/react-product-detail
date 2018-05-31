@@ -5,6 +5,7 @@
   "description": "product page demo",
   "main": "index.js",
   "dependencies": {
+    "express": "^4.16.3",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
   },
@@ -31,7 +32,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --hot --progress --color --open",
-    "build": "webpack -p --progress --colors"
+    "build": "webpack -p --progress --colors",
+    "serve": "npm run-script build && node server.js"
   },
   "author": "Alan Grgic",
   "license": "ISC"

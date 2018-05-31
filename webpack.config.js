@@ -9,13 +9,14 @@ const webpack = require('webpack');
 const isProduction = process.argv.indexOf('-p') !== -1;
 
 const packageJson = require('./package.json');
-const vendorDependencies = Object.keys(packageJson['dependencies']);
+const vendorDependencies = ["react","react-dom"];
 
 const cleanPlugin = new CleanWebpackPlugin(['public']);
 
 const htmlPlugin = new HtmlWebpackPlugin({
-  template: "./src/index.html",
-  filename: "./index.html"
+    template: "./src/index.html",
+    filename: "./index.html",
+    excludeAssets: [/styles.*.js/]
 });
 
 const definePlugin = new webpack.DefinePlugin({
