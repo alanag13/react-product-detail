@@ -7,6 +7,8 @@ This is a project that demonstrates the use of various front-end technologies/pr
 - Webpack
 - Responsive Design (Flexbox)
 
+A diagram illustrating a typical CI/CD system approach can also be found [here](./Workflow.png).
+
 # Running
 
 [NodeJS](https://nodejs.org) is required to build and run.

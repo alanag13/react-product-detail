@@ -45,7 +45,6 @@ export default class ImageCarousel extends React.PureComponent<IImageCarouselPro
         return (
             <div className="center-flex">
                 <div className="carousel-btn carousel-prev" onClick={this.prevGroup}>
-                    {/* <img src={arrowLeft} /> */}
                 </div>
                 <div className="carousel-ctrl">
                     {this.props.images.map((img, i) => (
