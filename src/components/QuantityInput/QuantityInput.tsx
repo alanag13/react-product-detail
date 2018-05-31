@@ -15,6 +15,7 @@ export default class QuatityInput extends React.PureComponent<any, any> {
         this.setState((prevState: any) => ({quantity: prevState.quantity + 1}));
     }
 
+    //dont allow decreasing the quantity below 1.
     decrementQty(){
         this.setState((prevState: any) => {
             if (prevState.quantity > 1){

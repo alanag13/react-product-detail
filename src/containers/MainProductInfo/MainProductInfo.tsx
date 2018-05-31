@@ -1,9 +1,9 @@
 import React from "react";
-import IMainProductInfoProps from "../../types/IMainProductInfoProps";
 import ProductHeading from "../../components/ProductHeading/ProductHeading";
 import PrimaryImage from "../../components/PrimaryImage/PrimaryImage";
-import ImageCarousel from "../ImageCarousel/ImageCarousel";
+import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 import { IImageElement } from "../../types/IProductDetail";
+import IMainProductInfoProps from "../../types/IMainProductInfoProps";
 
 require("./styles.css");
 

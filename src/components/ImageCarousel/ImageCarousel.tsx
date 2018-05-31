@@ -19,6 +19,9 @@ export default class ImageCarousel extends React.PureComponent<IImageCarouselPro
         this.nextGroup = this.nextGroup.bind(this);
     }
 
+    //this control breaks up an array of passed in images into groups
+    //depending on the numImagesShown prop. This will display the items in
+    //the corresponding "group index", if it exists.
     displayGroup(groupNumber: number){
         const count = this.props.images.length;
         const numberOfGroups = Math.ceil(count / this.props.numImagesShown);

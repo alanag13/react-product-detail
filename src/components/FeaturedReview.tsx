@@ -1,7 +1,7 @@
 import React from "react";
 import { IFeaturedReview } from "../types/IProductDetail";
 
-const Review = (props: IFeaturedReview) =>
+const FeaturedReview = (props: IFeaturedReview) =>
     <div className="review">
         {[...Array(5)].map((x, i) =>
                 <span className="medium red-text" key={i} dangerouslySetInnerHTML={{__html: (i + 1) <= parseInt(props.overallRating) ? '&#9733;' : '&#9734;' }}></span>
@@ -15,4 +15,4 @@ const Review = (props: IFeaturedReview) =>
         </div>
     </div>;
 
-export default Review;
+export default FeaturedReview;
