@@ -13,7 +13,7 @@ const PurchaseInfo = (props: IPurchaseInfoProps) =>
         <PromotionList promotions={ props.promotions } />
         <hr/>
         <QuantityInput />
-        <PrimaryActionButtons />
+        <PrimaryActionButtons purchaseCode={ props.purchaseCode }/>
     </section>;
 
 export default PurchaseInfo;
